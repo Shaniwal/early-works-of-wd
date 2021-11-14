@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulating or Navigation in JS</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="navbar">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Client</li>
+            <li>Services</li>
+            <li>Contact US</li>
+        </ul>
+    </div>
+    <div class="container">
+        This is Another Container
+    </div>
+    <script>
+        let main = document.getElementById('main');
+        console.log(main);
+        let navbar = document.getElementById('navbar');
+        console.log(navbar);
+
+        let container = document.getElementsByClassName('container');
+        console.log(container);
+
+        let selector = document.querySelector('.container');
+        console.log("selector returns", selector);
+
+        let sel = document.querySelector('#navbar>li');
+        console.log("selector returns", sel);
+
+
+        let selt = document.querySelectorAll('#navbar>li');
+        console.log("selector returns", selt);
+
+
+    </script>
+</body>
+</html>

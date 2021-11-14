@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script String Functions</title>
+</head>
+<body>
+    <script>
+        var str = 'this is a string';
+       console.log(str) ;
+       //indexOf function gives first occurence of a substring
+       var position = str.indexOf('is');
+       console.log(position);
+       //lastIndexOf function gives last occurence of a substring
+       var position = str.lastIndexOf('is');
+       console.log(position);
+
+       //Substring from a string slices from 1 to 5 slice function can also take negative value
+       //var substr = str.slice(1,6);
+      // var substr = str.substring(1,6);
+       var substr1 = str.substr(1,6); //ist value denotes starting position second value denotes number of charachters to be extracted
+              console.log(substr1);
+//replace function
+              var replaced = str.replace('string' , 'Harry');
+              console.log(str);
+              console.log(replaced);
+              console.log(str.toUpperCase()); //converts string to uppercase
+              console.log(str.toLowerCase()); // converts string in lower case
+              var newstr= str.concat('New String'); //concatinates two strings
+              console.log(newstr);
+              var strWithWhitespaces = "    this contains        whitespaces      .";
+              console.log(strWithWhitespaces);
+              console.log(strWithWhitespaces.trim()); // trim the whitespaces at the starting of the string
+
+              var char3 = str.charAt(0); //extracts the character at 0
+              console.log(char3);
+              var char3 = str.charCodeAt(2); //gives the code of character at 2
+              console.log(char3);
+
+              console.log(str[8]); //extracts character at 8th position in str
+              
+
+              
+
+    </script>
+</body>
+</html>

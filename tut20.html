@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoxModel</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            
+            /* this is universal styling code in which we apply styling to all the elements we write until it is changed later on  */
+        }
+
+        .container {
+            background-color: #FFEB3B;
+            border: 5px dotted #f34ed5;
+            /* padding: 50px; */
+            /* padding and margins can be set in various ways top right bottom left */
+            /* padding-inline-start: 10px; */
+            /* we can give value for paddings and margins in syntax padding: top right bottom left; and if we want to give same values to top and bottom and left and right padding: y(top/bottom) x(left/right)*/
+            /* padding: 20px 15px 25px 50px; 
+    margin: 20px 25px 30px 35px; */
+            padding: 20px 25px;
+            margin: 25px 15px;
+            width: 555px;
+            border-radius: 12px;
+            box-sizing: border-box;
+            /* box-sizing helps in sticking to the width of our element even we change padding settings */
+        }
+        body{
+            background-image: url('https://source.unsplash.com/random');
+            background-position: repeat-x;
+            /* background-repeat: no-repeat; */
+        }
+        aside{
+            float: right; 
+            width: 115px;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3> Tutorial for BoxModel</h3>
+        <h2> This is heading one</h2>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugit accusantium illum aliquid
+            impedit fuga voluptatibus reiciendis voluptates quisquam adipisci necessitatibus sunt, eum, molestias ipsum.
+        </p>
+    </div>
+            <aside>
+                <h4>Epcot Center</h4>
+                <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In veniam aliquam aperiam possimus tenetur, facilis distinctio voluptatibus eligendi unde assumenda. Aliquam, fuga alias sint illo voluptas iste repudiandae! Explicabo tenetur repellat, nobis corrupti dignissimos dolor necessitatibus accusamus illo veniam at exercitationem reiciendis in veritatis vero sed alias accusantium.</p>
+                </aside>
+    <div class="container">
+        <h2> This is heading two</h2>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugit accusantium illum aliquid
+            impedit fuga voluptatibus reiciendis voluptates quisquam adipisci necessitatibus sunt, eum, molestias ipsum.
+        </p>
+    </div>
+    <div class="container">
+        <h2> This is heading three</h2>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugit accusantium illum aliquid
+            impedit fuga voluptatibus reiciendis voluptates quisquam adipisci necessitatibus sunt, eum, molestias ipsum.
+        </p>
+        
+    </div>
+</body>
+
+</html>

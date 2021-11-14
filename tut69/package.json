@@ -1,0 +1,20 @@
+{
+  "name": "tut69",
+  "version": "1.0.0",
+  "description": "It is the best package built",
+  "main": "npm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wow"
+  ],
+  "author": "Vinny",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": ">1.0.0"
+  }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+h1{
+    background-color: steelblue;
+    color: darkblue;
+    font-weight: bold;
+    text-align: center;
+}
+div > p{ /*greater than size will help affect p which is the direct child of div*/
+    font-weight: bolder;
+    color: darkred;
+    background-color: darksalmon;
+}
+div li p{ 
+    font-weight: bold;
+    color: olive;
+    background-color: rosybrown;
+}
+div + p{
+    /* this will only effect the p tags with previous siblings(where parents are same) div */
+    color:peachpuff;
+    background-color: seagreen;
+}
+
+    </style>
+</head>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="containers">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is a paragraph in LI</p></li>
+                <li>This will not get affected</li>
+            </ul>
+            <p>
+                This is a paragraph
+            </p>
+        
+        </div>
+        <p>this is outer paragraph</p>
+    </div>
+    <p>
+        This is outer most paragraph
+    </p>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Template Area</title>
+    <style>
+.container{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: /* here we give a matrix of grid areas with same no of columns in each row*/
+    'navbar navbar navbar navbar'
+    'section section section aside'
+    'footer footer footer footer';
+
+}
+.item{
+    background-color: yellow;
+    border: 2px solid black;
+    
+}
+
+#navbar{
+grid-area: navbar; /* here we name the grid area so that we can use to create grid template areas matrix*/
+margin: 2px 14px;
+padding: 20px 20px;
+}
+#section{
+grid-area: section;
+margin: 12px 14px;
+padding: 20px 20px;
+}
+#aside{
+    grid-area: aside;
+    margin: 12px 14px;
+padding: 20px 20px;
+}
+#footer{
+    grid-area: footer;
+    margin: 12px 14px;
+padding: 20px 20px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home About ContactUs Services
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quaerat consequuntur culpa voluptas quisquam corporis, quod harum totam alias. In delectus facilis vero repellat mollitia odio soluta nobis molestias ea nam nulla minus illum, voluptas sunt quibusdam quas recusandae modi sit laboriosam explicabo voluptatibus quos. Cupiditate distinctio tempora eius, animi dignissimos laboriosam illum quis hic quasi optio consectetur totam repellat culpa? Dolores autem, sapiente ipsam suscipit error numquam sunt quia vel veritatis magnam placeat, repudiandae et ab sed. Iure quidem facere eveniet voluptatem consequatur, facilis aspernatur, reiciendis natus ipsum ut neque recusandae vero nisi ex dignissimos saepe officiis, laboriosam delectus alias magnam! In ducimus illum enim maxime consequuntur quaerat accusamus accusantium repellat voluptates asperiores et est dolores, voluptatibus impedit tempora. Odio exercitationem omnis dolorum. Vitae beatae officia vero. Adipisci quod eligendi nemo tempora, magnam neque atque nesciunt laborum pariatur qui, quia quaerat animi fuga dolorem in molestiae quas eius quibusdam eveniet. Ex fugit in repudiandae? Molestiae saepe soluta voluptatibus nisi, praesentium nesciunt ipsum aliquam, eligendi eveniet maiores harum magni esse commodi sunt quidem, modi laborum. Neque perferendis, eaque hic tempore modi aut nostrum eveniet, iusto temporibus aliquam sapiente asperiores. Fuga ea hic repudiandae similique amet minus fugit architecto, dicta laudantium!
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem rem maiores, ab nulla aliquam deserunt esse reprehenderit earum, vero magnam saepe quo nemo. Beatae quae voluptatum laboriosam nam enim minima doloremque, natus culpa ullam soluta veniam necessitatibus autem non ea, vel perspiciatis nulla, accusamus incidunt provident tempore. Nesciunt, accusantium debitis?
+        </div>
+        <div id="footer" class="item">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque nesciunt eos libero ducimus eius tempore quae aspernatur nisi pariatur autem, nam aut, repudiandae earum vel voluptatibus ratione eveniet omnis officiis ipsum. Illum, magni blanditiis.
+        </div>
+        <!-- <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div>
+        <div class="item">Item-11</div>
+        <div class="item">Item-12</div>
+        <div class="item">Item-13</div>
+        <div class="item">Item-14</div> -->
+    </div>
+</body>
+</html>

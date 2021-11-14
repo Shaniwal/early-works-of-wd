@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+</head>
+<body>
+    <div class="container">THis is Simple HTML</div>
+    <script>
+        let myvar = 34; //number
+        let myvar1 = "Shipra";  //string
+        let myvar2 = true;  //boolean
+        let myvar3 = false; //boolean
+        let myvar4 = null; //null
+        let myvar5 = undefined; //undefined
+//how to create objects
+        let employee = {
+            name: "Shipra",
+            Salary: 10,
+            channel: "Code with Harry",
+            channel2: "Code with Didi"
+        }
+        //how to create array(array is also an object)
+        console.log(employee);
+let names = [1, 2, "Shipra", true];
+console.log(names);
+console.log(names[3]); //extracts 3 value of array starting from 0
+
+let nms = new Array(24, 12, 25, 1, "Shibu", false, undefined); //another way to create array
+console.log(nms);
+console.log(names.length);
+nms = nms.sort();  //sorts the values of an array
+console.log(nms);
+
+nms.push("this is pushed"); //inserts value to array at last
+console.log(nms);
+let emps = new Array(24);
+console.log(emps);
+    </script>
+</body>
+</html>

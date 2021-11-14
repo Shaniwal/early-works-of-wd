@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+     <!-- <link rel="stylesheet" href="tut13.css">  -->
+    <style >
+        p {
+            color: steelblue ;
+            background-color: tan !important ;
+        }
+        </style>
+        <link rel="stylesheet" href="tut13.css">  
+    <!-- when we use both inline and internal css Html priortises inline css as in this case the color of paragraph will be as per its inline css given below but the secong paragraph tag that we have inserted will be styled according to internal css
+    but in case of external css html priortise the external css if it is embedded after internal css as in above case when we comment out the link tag after style tag the styling will be according to the style tag in internal css but we can use  !important to give precedence to any css we want -->
+</head>
+
+<body>
+    <h3>This is CSS Tutorial</h3>
+    <p style="color: tomato; background-color: rgb(140, 188, 210);">This tutorial will teach us about Html/Css</p>
+<p>this checks out the working of our internal css which we have written in head tag</p>
+
+</body>
+
+</html>

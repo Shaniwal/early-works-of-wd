@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DateObjects</title>
+    <style>
+        .container {
+            font-size: 25px;
+            font-family: cursive;
+            font-style: italic;
+            border: 2px solid black;
+            color: chocolate;
+            background-color: darkkhaki;
+            padding: 12px 15px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .container:hover {
+            background-color: darkred;
+            color: floralwhite;
+        }
+
+        #time {
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        Current Time is <span id="time"></span>
+    </div>
+    <script>
+        console.log('this is date and time tutorial');
+        let now = new Date();
+        console.log(now);
+
+        let dt = new Date(0);
+        console.log(dt);
+
+        let nwdt = new Date("2029-09-30");
+        console.log(nwdt);
+        //in the format below we pass arguments as year month date hours minutes seconds
+        let ndt = new Date(3020, 0, 12, 21, 40, 26, 2);
+        console.log(ndt);
+
+        let yr = ndt.getFullYear();
+        console.log("The Year is", yr);
+
+        let date = ndt.getDate();
+        console.log("The date is", date);
+
+        let mnth = ndt.getMonth();
+        console.log("The Month is", mnth);
+
+        let hr = ndt.getHours();
+        console.log("The Hour is", hr);
+
+        let dy = ndt.getDay();
+        console.log("The Day is", dy);
+
+        let ady = ndt.getUTCDay();
+        console.log("The Day in America is", dy);
+
+        ndt.setDate(7);
+        console.log(ndt);
+        console.log(Date.now());
+        console.log(Date.now());
+
+        setInterval(updateTime, 1000);
+
+        function updateTime() {
+            time.innerHTML = new Date();
+        }
+    </script>
+</body>
+
+</html>

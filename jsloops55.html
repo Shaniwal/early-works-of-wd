@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in JS</title>
+</head>
+
+<body>
+    <div class="container">
+        This is About Loops
+    </div>
+    <script>
+        console.log("THIS TUT 55");
+
+        //for loop it is used to iterate an array mostly
+        let i = 0
+        for (i = 0; i < 3; i++) {
+            console.log(i);
+        }
+
+        let frnds = ["Vinny","Shivani", "Ayush", "Mummy"];
+        for (let index = 0; index < frnds.length; index++) {
+            console.log("Hello " + frnds[index]);
+            
+        }
+//for each
+        frnds.forEach(function f(element) {
+            console.log("greetings " +element +" "+ "using modern js");
+        })
+//for of
+        for (element of frnds){
+            console.log("greetings " +element +" "+ "using modern js for of loop");
+        }
+//for in
+        let employee = {
+            name: "Shipra",
+            Salary: 10,
+            channel: "Code with Harry",
+            channel2: "Code with Didi"
+        }
+
+        for(key in employee){
+            console.log(`The ${key} of employee is ${employee[key]}`);
+        }
+
+        //while loop
+        let a = 0;
+        while(a<4){
+            console.log(`${a} is less than 4`);
+            a++;
+        }
+
+        let j = 5;
+        do{
+            console.log(`${j} is less than 4 and we are inside do while loop`);
+            j++;
+        }while(j<4);
+            
+        
+    </script>
+</body>
+
+</html>

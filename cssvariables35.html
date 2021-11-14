@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables Custom Properties</title>
+    <style>
+        :root{
+            --primary-color: pink;
+            --danger-color:red;
+            --maxw:400px;
+        }
+.box{
+    --box-color: limegreen;/*this is a variable which can be used anywhere in the box*/
+    width:200px;
+    height: 200px;
+    background-color: var(--primary-color);
+    box-shadow: 6px 6px var(--box-color);
+border:4px solid var(--danger-color);
+margin:10px 5px;
+}
+.container{
+    max-width:var(--maxw);
+    display: flex;
+    background-color: var(--danger-color);
+    align-items: center;
+    justify-content: center;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property of Css</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+img{
+    width: 344px;
+    height: 400px;
+    margin:-178px auto;
+    display:block;
+}
+h3{
+    font-family: cursive;
+    margin: 0px 53px;
+    padding: 0px 0px;
+    text-align: center;
+}
+header{
+    /* width:32%; 
+    margin:auto; */
+    /* we can set its width because it is a block element if it would have been inline element we could not have been able to change its width change */
+    width: 1200px;
+    margin: auto;
+}
+.box{
+    border:4px solid red;
+    background-color: rosybrown;
+    margin:4px 0px;
+    padding:10px 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    width:33%;
+}
+.container{
+    width: 1200px;
+    margin: auto;
+}
+    </style>
+</head>
+<body>
+    <header class="top">
+        <img src="logo.png" alt="">
+        <h3>Welcome to my Blog</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi cupiditate animi! Maiores, veniam? Placeat aut sed accusamus neque adipisci sequi? Dicta impedit maiores omnis possimus eveniet, nulla maxime sapiente aspernatur facere, esse commodi?</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi cupiditate animi! Maiores, veniam? Placeat aut sed accusamus neque adipisci sequi? Dicta impedit maiores omnis possimus eveniet, nulla maxime sapiente aspernatur facere, esse commodi?</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi cupiditate animi! Maiores, veniam? Placeat aut sed accusamus neque adipisci sequi? Dicta impedit maiores omnis possimus eveniet, nulla maxime sapiente aspernatur facere, esse commodi?</p>
+        </div>
+    </div>
+</body>
+</html>

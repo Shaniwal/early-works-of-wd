@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using Alert Confirm and Prompt</title>
+</head>
+<body>
+    <div class="container">
+        THis is A PAge
+    </div>
+    <script>
+        //Alert is in-Browser JS. displays a window with the message passed as it parameter. this wont return any value. It displays a Modal Window which will not let you work on the screen until you send it okay. it is used when you have to state anything to user and do not want any value from him.
+
+        //alert("This is a Message");
+
+
+
+        //prompt is used to take value from user. prompt() returns value
+        //let name = prompt('What is Your Name', 'Guest');
+        //console.log(name);
+
+        //confirm is used to confirm from the user. it returns value as true or false
+        let delpost = confirm("Do you really want to delete this post");
+        console.log(delpost);
+        if(delpost){
+            console.log('You have deleted your post successfully');
+        }
+        else{
+            console.log('You have not deleted your post ');
+        }
+
+    </script>
+</body>
+</html>

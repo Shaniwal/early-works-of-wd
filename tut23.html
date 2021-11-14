@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation MEnu</title>
+    <style>
+.navbar{
+    background-color: firebrick;
+    border-radius: 30px;
+}
+.navbar li{
+    float: left;
+    list-style: none;
+    margin:13px 20px;
+    
+    
+}
+.navbar ul{
+    overflow:auto;
+}
+.navbar li a{
+    padding:4px 4px;
+    /* padding-top: 5px; */
+    text-decoration: none;
+    color: rosybrown;
+    font-weight:bolder;
+    font-family: cursive;
+    
+
+}
+.navbar li a:hover{
+    padding:4px 4px;
+    text-decoration: none;
+    color: rgb(83, 3, 3);
+    font-weight:bolder;
+    font-family: cursive;
+    
+
+}
+.search{
+    float:right;
+    margin:auto 10px;
+    padding:10px 12px;
+    
+}
+.navbar input{
+    border: 2px solid blue;
+    border-radius: 12px;
+    padding:4px 4px;
+ 
+}
+    </style>
+</head>
+<body>
+   <header>
+       <nav class="navbar">
+           <ul>
+               <li><a href="#">Home</a> </li>
+               <li><a href="#">About Us</a> </li>
+               <li><a href="#">Services</a> </li>
+               <li><a href="#">Contact Us</a> </li>
+               <div class="search">
+                   <input type="text" id="search" name="search" placeholder="what do you want">
+               </div>
+           </ul>
+       </nav>
+   </header> 
+</body>
+</html>

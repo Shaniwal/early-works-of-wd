@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animation</title>
+    <style>
+        .container {
+
+            background-color: lightgreen;
+        }
+
+        .box {
+            background-color: chartreuse;
+            width: 250px;
+            height: 250px;
+            color: darkgreen;
+            position: relative;
+            animation-name: didi;
+            animation-duration: 2s;
+            animation-iteration-count: 2;
+            animation-fill-mode: alternate;
+            animation-timing-function: ease-in-out;
+            animation-delay: 4s;
+            animation-direction: reverse;
+        }
+
+        .box2 {
+            background-color: chartreuse;
+            width: 350px;
+            height: 250px;
+            color: darkgreen;
+            position: relative;
+            animation-name: shibu;
+            animation-duration: 2s;
+            /* animation-iteration-count: 2;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-out;*/
+            /* animation syntax-> 
+            animation:animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+            animation: shibu 9s ease-in-out 3s 2 alternate-reverse;
+        }
+
+        @keyframes shibu {
+            0% {
+                top: 0px;
+                left: 10px;
+            }
+
+            20% {
+                top: 100px;
+                left: 50px;
+            }
+
+            50% {
+                top: 250px;
+                left: 150px;
+            }
+
+            90% {
+                top: 350px;
+                left: 250px;
+
+            }
+        }
+
+        @keyframes didi {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 1400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This a Box.
+        </div>
+        <div class="box2">
+            This a Box2.
+        </div>
+    </div>
+</body>
+
+</html>

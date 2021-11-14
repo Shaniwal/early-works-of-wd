@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Sansita Swashed', cursive;
+            box-sizing: border-box;
+            
+        }
+        body{
+            background-image: url('https://source.unsplash.com/random');
+        }
+.container{
+width:900px;
+border:3px solid royalblue;
+margin:33px auto;
+/* auto property means it calculates equal margin in left right when in x */
+background: rgb(154, 201, 240);
+
+}
+.item{
+    border:3px solid blue;
+    margin:12px 3px;
+    padding:12px 3px;
+    background:#dff5f4;
+}
+/* float decides where should your item float on the webpage */
+#fruits{
+    float: right;
+    width: 48%;
+}
+#grocery{
+    float: left;
+    width: 48%;
+}
+#vegies{
+    /* float: left; */
+    width: 100%;
+    clear: both;
+}
+p,h3{
+    text-align: justify;
+}
+h1{
+    width:299px;
+     margin:auto;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+<div id="fruits" class="item">
+    <h3>Fruits</h3>
+    <p id="fruitpara" class="para">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, fugiat, corporis rerum similique voluptas in alias nemo dignissimos harum perferendis maxime ex. Perferendis dolorum ipsum ratione. Culpa inventore consequuntur fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quasi eos eveniet non labore, dolorem ipsum assumenda earum molestias, cupiditate placeat. Assumenda aliquid quo eos rerum obcaecati itaque nesciunt corporis provident voluptatibus, dolor molestias?
+    </p>
+</div>
+<div id="grocery" class="item">
+    <h3>Grocery</h3>
+    <p id="grocerypara" class="para">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, fugiat, corporis rerum similique voluptas in alias nemo dignissimos harum perferendis maxime ex. Perferendis dolorum ipsum ratione. Culpa inventore consequuntur fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati labore aspernatur officiis a debitis ipsa nostrum impedit quod libero, soluta quos magni. Ea tenetur nihil a facere fugit incidunt, vero veritatis error. Nostrum, pariatur.
+    </p>
+</div>
+<div id="vegies" class="item">
+    <h3>Vegetables</h3>
+    <p id="vegpara" class="para">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, fugiat, corporis rerum similique voluptas in alias nemo dignissimos harum perferendis maxime ex. Perferendis dolorum ipsum ratione. Culpa inventore consequuntur fugit.
+    </p>
+</div>
+<div id="stationery" class="item">
+    <h3>stationery</h3>
+    <p id="statpara" class="para">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, fugiat, corporis rerum similique voluptas in alias nemo dignissimos harum perferendis maxime ex. Perferendis dolorum ipsum ratione. Culpa inventore consequuntur fugit.
+    </p>
+</div>
+    </div>
+</body>
+</html>

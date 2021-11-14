@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>We will learn forms with this</h2>
+    <form action="backend.php">
+        <!-- backend.php is a file name we have taken as an example we can add backup files to our form to make any user input from our webpage to be stored in that backup file -->
+        <label for="name">Name</label>
+        <input type="text" id="name">
+        <br>
+        <label for="role">Role</label>
+        <input type="text" id="role">
+        <br>
+        <!-- input tag offers various attributes we have used type to get to know the type of data user can enter in the particular form label tag gives label to the inputbox and its for attribute uses the same value as in id  -->
+        <div>
+            <label for="surname">LastName:</label>
+            <input type="text" id="surname">
+        </div><br>
+        <div>
+            <label for="location">City:</label>
+            <input type="text" id="location">
+        </div><br>
+        <!-- here we have used div tag to move 'city' in next line div is a block element it occupies the entire width and next element has to move in the next line. It is more preffered than br tag -->
+        <div>
+            <label for="emailid">Email:</label>
+            <input type="email" name="myemail" id="emailid">
+            <!-- name attribute takes the value as in the name of the row in your backend  -->
+        </div>
+<br>
+        <div>
+            <label for="date"> Date:</label>
+            <input type="date" name="" id="date">
+        </div><br>
+        <div>
+            <label for="mysal">Salary:</label>
+            <input type="number" name="" id="mysal">
+        </div>
+<br>
+        <div>
+            <label for="Are you Indian">Are you Indian:</label>
+            <input type="checkbox" name="Nationality" id="Are you Indian" checked>
+        </div><br>
+        <div>
+            <label for="male"> Male:</label>
+            <input type="radio" name="Gender" id="male">
+            <label for="female"> Female:</label>
+            <input type="radio" name="Gender" id="female">
+            <label for="others">Others:</label>
+            <input type="radio" name="Gender" id="others">
+            
+        </div> <br>
+                <div>
+                    <label for="car">Car</label>
+                    <select name="car" id="car">
+                        <option value="Alto" selected>Alto</option>
+                        <option value="Go">Go</option>
+                        <option value="Kwid">Kwid</option>
+                    </select>
+                </div>
+        <div>
+            Tell us about <br> <textarea name="Mytext" id="" cols="30" rows="10"></textarea>
+        </div>
+       
+        <div>
+            <input type="submit" value="Submit Now">
+        </div>
+        <div>
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+
+</html>

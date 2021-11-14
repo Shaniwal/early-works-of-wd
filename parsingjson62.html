@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parsing And JSON in JAVA SCRIPT</title>
+</head>
+<body>
+    <div class="container">
+        This is my container
+    </div>
+    <script>
+        let jsonobj = {
+            name : " Vinny",
+            channel : " didi",
+            friend : "shibu",
+            food : "Chawal"
+        }
+        console.log(jsonobj);
+        let myjsonstr = JSON.stringify(jsonobj);
+        console.log(myjsonstr);
+
+       myjsonstr= myjsonstr.replace('Vinny', 'Shibu')
+       console.log(myjsonstr);
+
+       newJsonObj = JSON.parse(myjsonstr);
+       console.log(newJsonObj);
+    </script>
+</body>
+</html>

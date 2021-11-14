@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATH OBJECT IN JS</title>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            This is MATH OBJECT in JS Tutorial
+        </h1>
+    </div>
+    <script>
+        //printing the MATH object
+        let m= Math;
+console.log(m);
+
+//Printing the functions of MATH object
+let a = 34.64534;
+let b = -68.7;
+
+console.log("The value of a and b is ", a,b);
+console.log("The value of a and b rounded of is ", Math.round(a),Math.round(b));
+console.log("The value of a raise to power b is ", Math.pow(a,b));
+console.log("The Square root of a and b is ", Math.sqrt(a), Math.sqrt(b));
+
+console.log("The Square root of a and b rounded up to nearest integer is ", Math.ceil(Math.sqrt(a)), Math.ceil(Math.sqrt(b)));
+console.log("The Square root of a and b rounded down to nearest integer is ", Math.floor(Math.sqrt(a)), Math.floor(Math.sqrt(b)));
+
+console.log("The Absolute value of a and b  is ", Math.abs(a), Math.abs(b));
+
+console.log("The value of sin(a) and cos(b)  is ", Math.sin(a), Math.cos(b));
+
+console.log("The min and max value of a and b  is ", Math.min(a,b), Math.max(a,b));
+
+// generating random number
+console.log("The Random number is" , Math.random());
+
+//generating random number between two numbers
+let x=100;
+let y=150;
+let z= x + (y-x)*Math.random();
+console.log("Random number between 100 and 150 is ", z);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid with Media Queries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'nav nav nav nav'
+            
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        @media only screen and (max-width: 300px) {
+            body {
+                background-color: violet;
+            }
+            .container {
+          
+            grid-template-areas:
+                'nav nav nav nav'
+                 'section section section section'
+                 'aside aside aside aside'
+                'footer footer footer footer';
+        }
+        aside{
+            display:none;
+        }
+        span{
+            display:block;
+            text-align: center;
+        }
+        }
+
+        @media only screen and (min-width: 300px) and (max-width: 500px) {
+            body {
+                background-color: yellowgreen;
+            }
+            .container {
+            
+            grid-template-areas:
+                'nav nav nav nav'
+                 'section section section section'
+                 'aside aside aside aside'
+                'footer footer footer footer';
+        }
+        span{
+            display:block;
+            text-align: center;
+        }
+        }
+
+        @media only screen and (min-width: 500px) and (max-width: 800px) {
+            body {
+                background-color: steelblue;
+            }
+
+        }
+
+        @media only screen and (min-width: 800px) {
+            body {
+                background-color: peru;
+            }
+   
+        }
+
+
+
+        .bdr {
+            background-color: wheat;
+            border: 2px solid black;
+            padding: 2px 4px;
+        }
+
+        nav {
+            grid-area: nav;
+
+        }
+
+        section {
+            grid-area: section;
+
+        }
+
+        aside {
+            grid-area: aside;
+
+        }
+
+        footer {
+            grid-area: footer;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+             <span>Home</span> <span>About</span> <span>Contact</span> <span>Services</span> 
+        </nav>
+        <section class="bdr">
+            <h2>Learn CSS in Hindi</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nobis ea consequatur placeat reprehenderit iusto est delectus sunt, doloremque adipisci saepe voluptatibus. Porro sit delectus dolorum. Rerum ratione necessitatibus tenetur impedit cupiditate explicabo error provident cum autem asperiores reprehenderit eos vitae reiciendis, possimus, veritatis sapiente ut voluptates quae doloribus esse, sequi repellat beatae! Eligendi rem necessitatibus, iste illo impedit deserunt ea minus fugiat praesentium ad dolore voluptatem cumque vel maiores cupiditate incidunt culpa, sunt officia possimus nam nisi ducimus. Odio delectus eos cumque eaque qui ad ut beatae perspiciatis dolorem aut, architecto aliquid excepturi nihil laboriosam suscipit porro hic optio nostrum et laudantium neque facilis. Dolores sunt eaque necessitatibus quia porro et, adipisci nemo dicta aliquam dolorum at vitae temporibus, deleniti odio!</p>
+        </section>
+        <aside class="bdr">
+            <h1>
+                More about us
+            </h1>
+        </aside>
+        <footer class="bdr">Copyright Code with Vinny2020</footer>
+    </div>
+</body>
+
+</html>
